@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:19.10
+FROM ubuntu:18.04
 
 # Install.
 RUN \
