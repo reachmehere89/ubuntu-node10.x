@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
 # Install.
 RUN \
@@ -16,7 +16,7 @@ RUN \
   apt-get install -y software-properties-common
 
 # Install basic softwares
-RUN apt-get install -y g++ gcc python curl git htop zip unzip wget make ca-certificates
+RUN apt-get install -y g++ gcc python curl git htop zip unzip wget make ca-certificates sudo
 
 # Delete files in /apt/lists
 RUN rm -rf /var/lib/apt/lists/*
